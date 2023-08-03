@@ -6,6 +6,7 @@ exports.isEmployeeFound= async (req, res,next) => {
     if (isFound) {
       const id = isFound.id;
         let currentDate = new Date();
+        currentDate.setUTCHours(currentDate.getUTCHours()+3);
         let day = currentDate.getDate();
         let month = currentDate.getMonth() + 1; 
         let year = currentDate.getFullYear();
