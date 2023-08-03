@@ -5,7 +5,7 @@ exports.isEmployeeFound= async (req, res,next) => {
     const isFound = await Employee.findOne({ email: email });
     if (isFound) {
       const id = isFound.id;
-      let currentDate = new Date();
+        let currentDate = new Date();
         let day = currentDate.getDate();
         let month = currentDate.getMonth() + 1; 
         let year = currentDate.getFullYear();

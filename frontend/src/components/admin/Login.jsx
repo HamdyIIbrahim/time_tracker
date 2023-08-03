@@ -5,11 +5,13 @@ import { toast } from "react-toastify";
 
 const Login = () => {
     const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onFormSubmit = (data) => {
     if(data.email === "admin"){
         if(data.password === "admin"){
@@ -24,6 +26,7 @@ const Login = () => {
     }
   };
   const handleError = (errors) => {};
+  
   const registerOptions = {
     email: { required: "Email is required" },
     password: { required: "Password is required" },
