@@ -1,0 +1,20 @@
+.parent{
+    width: 100%;
+}
+.home{
+    width: 90% ;
+    margin: auto;
+    height: 49% ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) ;
+}
+.home h1{
+    font-size: 40px ;
+    font-weight: 700 ;
+    margin-bottom: 50px;
+}
+.home:last-of-type{
+    min-height: 250px;
+}
+.home h1:last-of-type{
+    font-size: 30px;
+}
