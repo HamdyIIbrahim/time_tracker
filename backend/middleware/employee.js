@@ -34,6 +34,7 @@ exports.createBoth= async (req, res,next) => {
       } else {
         const id = newEmployee.id;
         let currentDate = new Date();
+          currentDate.setUTCHours(currentDate.getUTCHours()+3);
         let day = currentDate.getDate();
         let month = currentDate.getMonth() + 1; 
         let year = currentDate.getFullYear();
