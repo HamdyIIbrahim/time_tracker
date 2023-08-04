@@ -99,7 +99,7 @@ const Homepage = () => {
                   } rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`}
                   id="grid-first-name"
                   type="text"
-                  placeholder="Mohammedi"
+                  placeholder="Hamdy"
                   name="name"
                   {...register("name", registerOptions.name)}
                 />
